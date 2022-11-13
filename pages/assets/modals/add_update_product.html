@@ -1,0 +1,45 @@
+<div class="modal fade" id="modal-product" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Producto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form id="form-product">
+                <div class="mb-3">
+                    <input type="hidden" class="form-control" id="id"  name="id">
+                    <label for="nombre" class="form-label">Nombre(*)</label>
+                    <input type="text" maxlength="70" class="form-control" id="name" required name="name">
+                </div>
+                <div class="mb-3">
+                    <label for="reference" class="form-label">Referencia(*)</label>
+                    <input type="text" maxlength="30" class="form-control" id="reference" name="reference" required>
+                </div>
+                <div class="mb-3">
+                    <label for="price" class="form-label">Precio(*)</label>
+                    <input type="number" min="1" class="form-control" id="price"  name="price" required>
+                </div>
+                <div class="mb-3">
+                    <label for="weight" class="form-label">Peso gr(*)</label>
+                    <input type="number" min="1" class="form-control" id="weight" name="weight" required>
+                </div>
+                <div class="mb-3">
+                    <label for="id_category" class="form-label">Categoria(*)</label>
+                    <select id="id_category" class="form-select" required name="id_category">
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="stock" class="form-label">Stock(*)</label>
+                    <input type="number" min="1" class="form-control" id="stock" name="stock" required>
+                </div>
+            
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="submit" id="btn-send" class="btn btn-primary" data-action="SAVE">Enviar</button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
